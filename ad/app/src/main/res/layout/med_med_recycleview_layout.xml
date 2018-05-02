@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/med_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/prec_cardView"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Medicine Name:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/medname_id"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="pre"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/medname_id"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Duration: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/durmed"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignStart="@+id/medname_id"
+            android:text="med"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignStart="@+id/medname_id"
+            android:layout_marginStart="82dp"
+            android:text="Days"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/durmed"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Time Taken:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timetaken"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/medname_id"
+            android:layout_alignTop="@+id/textView4"
+            android:text="ph"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timetaken"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Hour Range:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hrange"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignStart="@+id/timetaken"
+            android:layout_marginTop="5dp"
+            android:text="hrange"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="5dp"
+            android:text="Notes:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/notesmed"
+            android:layout_width="218dp"
+            android:layout_height="102dp"
+            android:layout_alignStart="@+id/hrange"
+            android:layout_below="@+id/hrange"
+            android:layout_marginTop="5dp"
+            android:text="notes"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/activBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_below="@+id/textView18"
+            android:layout_marginTop="13dp"
+            android:onClick="chnageActiveStatus" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

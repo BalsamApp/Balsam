@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ad.ad.paitentPersonal_PH"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/senm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView27"
+        android:layout_marginTop="14dp"
+        android:text="Paitent Information:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_marginTop="60dp"
+        android:text="Name:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/patientName"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/birthday"
+         />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginTop="110dp"
+        android:text="Birthday:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/gender"
+        android:layout_alignTop="@+id/textView14"
+         />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginTop="155dp"
+        android:text="Gender:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/mobile"
+        android:layout_alignTop="@+id/textView16"
+         />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_marginTop="198dp"
+        android:text="Mobile number:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/textView19"
+        android:layout_marginStart="24dp"
+        android:layout_toEndOf="@+id/textView19"
+         />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/status"
+        android:layout_alignBottom="@+id/mobile"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:text="Social status:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/address"
+        android:layout_below="@+id/mobile"
+        android:layout_marginTop="18dp"
+         />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_below="@+id/status"
+        android:layout_marginTop="11dp"
+        android:text="Address:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/mobile"
+        android:layout_alignTop="@+id/textView23"
+         />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView21"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="15dp"
+        android:text="Blood Type:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bloodType"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/address"
+        android:layout_alignTop="@+id/textView25"
+         />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bloodType"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="12dp"
+        android:text="Height:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="63dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/textView27"
+        android:layout_toStartOf="@+id/bloodType" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/height"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/height"
+        android:text="Weight:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="78dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/textView27"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/sen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/height"
+        android:layout_below="@+id/height"
+        android:layout_marginTop="17dp"
+        android:text="Health Status:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/sen"
+        android:layout_marginTop="23dp"
+        android:text="allergies:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/allergies"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/sen"
+         />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="14dp"
+        android:text="diseases:"
+        android:textColor="@color/colorSubPrimaryText"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/diseases"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/allergies"
+        android:layout_alignTop="@+id/textView6"
+         />
+
+
+
+</RelativeLayout>

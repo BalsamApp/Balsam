@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- <TextView
+         android:id="@+id/sesnm"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="15dp"
+         android:text="Patient Information"
+         android:textColor="@color/colorPrimaryDark"
+         android:textSize="24sp" />-->
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorPrimary"
+            >
+
+            <TextView
+                android:id="@+id/senm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="34dp"
+                android:text="Personal  Information:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvidd"
+                android:layout_gravity="end"
+                android:layout_marginTop="96dp"
+                android:text="Name"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/tvname"
+                android:layout_marginEnd="19dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvidd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvgender"
+                android:layout_alignStart="@+id/tvgender"
+                android:layout_below="@+id/tvname"
+                android:layout_marginTop="32dp"
+                android:text="IDD"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etidd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvgender"
+                android:layout_alignLeft="@+id/etname"
+                android:layout_alignStart="@+id/etname"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp" />
+            ////
+
+            <TextView
+                android:id="@+id/tvgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvdate"
+                android:layout_alignStart="@+id/tvdate"
+                android:layout_below="@+id/tvidd"
+                android:layout_marginTop="28dp"
+                android:text="Gender"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvdate"
+                android:layout_alignLeft="@+id/etidd"
+                android:layout_alignStart="@+id/etidd"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="18sp" />
+            ////
+
+            <TextView
+                android:id="@+id/tvdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tvgender"
+                android:layout_marginLeft="31dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="30dp"
+                android:text="Birth Date"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvdate"
+                android:layout_alignBottom="@+id/tvdate"
+                android:layout_alignLeft="@+id/etgender"
+                android:layout_alignStart="@+id/etgender"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="18sp" />
+            ////
+
+            <TextView
+                android:id="@+id/tvstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvdate"
+                android:layout_alignStart="@+id/tvdate"
+                android:layout_below="@+id/tvdate"
+                android:layout_marginTop="30dp"
+                android:text="Status"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvstatus"
+                android:layout_alignBottom="@+id/tvstatus"
+                android:layout_alignLeft="@+id/etdate"
+                android:layout_alignStart="@+id/etdate"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="18sp" />
+            ////
+
+            <TextView
+                android:id="@+id/tvphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvaddr"
+                android:layout_alignStart="@+id/tvaddr"
+                android:layout_below="@+id/tvstatus"
+                android:layout_marginTop="32dp"
+                android:text="Phone"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvphone"
+                android:layout_alignBottom="@+id/tvphone"
+                android:layout_alignLeft="@+id/etstatus"
+                android:layout_alignStart="@+id/etstatus"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp" />
+            ////
+
+            <TextView
+                android:id="@+id/tvaddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvstatus"
+                android:layout_alignStart="@+id/tvstatus"
+                android:layout_below="@+id/tvphone"
+                android:layout_marginTop="26dp"
+                android:text="Address"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etaddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/etname"
+                android:layout_alignTop="@+id/tvaddr"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="18sp" />
+            ////
+            <TextView
+                android:id="@+id/tvtall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvaddr"
+                android:layout_alignStart="@+id/tvaddr"
+                android:layout_below="@+id/tvaddr"
+                android:layout_marginTop="40dp"
+                android:text="Tall"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ettall"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvtall"
+                android:layout_alignBottom="@+id/tvtall"
+                android:layout_alignLeft="@+id/etaddr"
+                android:layout_alignStart="@+id/etaddr"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvtall"
+                android:layout_toEndOf="@+id/ettall"
+                android:textColor="@color/cardview_dark_background"
+                android:text="cm"
+                android:textSize="18sp"/>
+
+
+            <TextView
+                android:id="@+id/tvwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvtall"
+                android:layout_alignStart="@+id/tvtall"
+                android:layout_below="@+id/tvtall"
+                android:layout_marginTop="29dp"
+                android:text="Weight"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etwei"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvwei"
+                android:layout_alignBottom="@+id/tvwei"
+                android:layout_alignLeft="@+id/ettall"
+                android:layout_alignStart="@+id/ettall"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvwei"
+                android:layout_toEndOf="@+id/ettall"
+                android:textColor="@color/cardview_dark_background"
+                android:text="Kg"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/butt_editinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="618dp"
+                android:text="Edit"
+                android:textColor="@color/cardview_dark_background" />
+
+
+            ///////////////////////////////////////////
+
+            /////////////////////////
+            /////////////////////////////
+            //////////////////////////
+            /////////////////////////////
+
+            <TextView
+                android:id="@+id/sen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/senm"
+                android:layout_marginTop="699dp"
+                android:text="Health Status:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvboold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvwei"
+                android:layout_alignStart="@+id/tvwei"
+                android:layout_below="@+id/sen"
+                android:layout_marginTop="27dp"
+                android:text="Boold Type"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etboold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvboold"
+                android:layout_alignBottom="@+id/tvboold"
+                android:layout_alignLeft="@+id/butt_editinfo"
+                android:layout_alignStart="@+id/butt_editinfo"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvdis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvboold"
+                android:layout_alignStart="@+id/tvboold"
+                android:layout_below="@+id/tvboold"
+                android:layout_marginTop="33dp"
+                android:text="Diseases"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etdis"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_alignBaseline="@+id/tvdis"
+                android:layout_alignBottom="@+id/tvdis"
+                android:layout_alignLeft="@+id/etboold"
+                android:layout_alignStart="@+id/etboold"
+                android:layout_marginBottom="-48dp"
+                android:layout_marginTop="30dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvsens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvdis"
+                android:layout_alignStart="@+id/tvdis"
+                android:layout_below="@+id/tvdis"
+                android:layout_marginTop="80dp"
+                android:text="Sensitivity"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/etsens"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_alignBaseline="@+id/tvsens"
+                android:layout_alignBottom="@+id/tvsens"
+                android:layout_alignLeft="@+id/etdis"
+                android:layout_alignStart="@+id/etdis"
+                android:ems="10"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="25dp"
+                android:inputType="textMultiLine"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

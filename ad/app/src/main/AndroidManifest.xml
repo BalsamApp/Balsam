@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ad.ad">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".home_page_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".dep_page" />
+        <activity android:name=".FamilyActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".p_myinfo_activity" />
+        <activity android:name=".patient_signUp" />
+        <activity android:name=".med_activity_recycleview" />
+        <activity android:name=".reset_password" />
+        <activity android:name=".password_check" />
+        <activity android:name=".patient_login" />
+        <activity android:name=".pharmacistMain" />
+        <activity android:name=".pharmacistHome" />
+        <activity android:name=".paitentPersonal_PH" />
+        <activity android:name=".pharmacy_Login" />
+        <activity android:name=".alarm_activty" />
+        <activity android:name=".med_med_activity" />
+        <activity android:name=".password_checkPH" />
+        <activity android:name=".reset_passwordPH"></activity>
+        <activity android:name=".p_editmyinfo"/>
+        <activity android:name=".p_med_activity_recycleview"/>
+        <activity android:name=".p_med_med_activity"/>
+        <activity android:name=".dep_p_myinfo_activity"/>
+         <activity android:name=".dep_p_editmyinfo"/>
+        <activity android:name=".get_data" />
+        <activity android:name=".AddMed" />
+        <activity android:name=".patientID" />
+        <activity android:name=".CreateNewPresc" />
+        <activity android:name=".Docotr" />
+        <activity android:name=".paitentPersonal" />
+        <activity android:name=".passwordcheek" />
+        <activity android:name=".resetPassword"></activity>
+        <activity android:name=".DoctorLogin" />
+        <receiver android:name=".Alarm_receiver" />
+
+                <service android:name=".myService" />
+
+    </application>
+
+</manifest>

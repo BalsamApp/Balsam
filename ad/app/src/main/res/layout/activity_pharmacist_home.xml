@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ad.ad.pharmacistHome"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:elevation="0dp"
+        android:id="@+id/appbarid"
+        android:background="#ffff">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/phph" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/presBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbarid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="Paitent Prescription"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/viewP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/presBtn"
+        android:layout_alignStart="@+id/presBtn"
+        android:layout_below="@+id/presBtn"
+        android:layout_marginTop="30dp"
+        android:text="view paitent Info"
+        android:textSize="18sp" />
+
+</RelativeLayout>

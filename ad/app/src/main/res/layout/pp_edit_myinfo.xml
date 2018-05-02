@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ad.ad.p_editmyinfo">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Edit Patient Information"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1500dp"
+        android:layout_below="@+id/toolbar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="38dp"
+                    android:text="Full name"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etname1"
+                    android:layout_width="215dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/etdateyear1"
+                    android:layout_alignTop="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/c2"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="101dp"
+                    android:text="National ID"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etidd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView4"
+                    android:layout_alignStart="@+id/etname1"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/c2"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingRight="50dp"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorLink="@color/colorPrimaryDark" />
+
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="151dp"
+                    android:text="Gender"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/etgender1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignStart="@+id/etidd1"
+                    android:layout_alignTop="@+id/textView9"
+                    android:layout_gravity="start">
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/c2"
+                        android:buttonTint="@color/c2"
+                        android:text="Female"
+                        android:textColorHint="@color/c2"
+                        android:textColorLink="@color/c2" />
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/p_gander_up"
+                        android:layout_alignStart="@+id/p_gander_up"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/c2"
+                        android:buttonTint="@color/c2"
+                        android:text="Male" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="213dp"
+                    android:text="Birth date"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/etidd1"
+                    android:layout_alignTop="@+id/textView10"
+                    android:text="Day"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/etdateday1"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/etdateyear1"
+                    android:layout_alignStart="@+id/etname1"
+                    android:entries="@array/day" />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/textView10"
+                    android:layout_marginEnd="94dp"
+                    android:text="Month"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/etdatemonth1"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/etdateday1"
+                    android:layout_toEndOf="@+id/etdateday1"
+                    android:entries="@array/month" />
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="58dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView10"
+                    android:layout_marginStart="-94dp"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:text=" Year"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etdateyear1"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginEnd="12dp"
+                    android:backgroundTint="@color/c2"
+                    android:ems="10"
+                    android:hint="2000"
+                    android:inputType="number"
+                    android:paddingLeft="0dp" />
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_below="@+id/etdateyear1"
+                    android:layout_gravity="start"
+                    android:text="Social status"
+                    android:textSize="18sp" />
+
+                <RadioGroup
+                    android:id="@+id/etstatus1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignStart="@+id/etidd1"
+                    android:layout_alignTop="@+id/textView11"
+                    android:layout_gravity="start">
+
+                    <RadioButton
+                        android:id="@+id/single"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/c2"
+                        android:buttonTint="@color/c2"
+                        android:text="Single" />
+
+                    <RadioButton
+                        android:id="@+id/married"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/c2"
+                        android:buttonTint="@color/c2"
+                        android:text="Married" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="358dp"
+                    android:text="Phone number"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etphone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView8"
+                    android:layout_alignStart="@+id/etidd1"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/c3"
+                    android:ems="10"
+                    android:inputType="number" />
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="418dp"
+                    android:text="Address"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etaddr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView12"
+                    android:layout_alignStart="@+id/etname1"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/c2"
+                    android:ems="10"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/ettall1"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:text="Tall"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/ettall1"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/etname1"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="488dp"
+                    android:backgroundTint="@color/c2"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView13"
+                    android:layout_toEndOf="@+id/etdateday1"
+                    android:text="cm"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/textView7"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="553dp"
+                    android:text="Weight"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etweight1"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView14"
+                    android:layout_alignStart="@+id/etname1"
+                    android:layout_gravity="start"
+                    android:backgroundTint="@color/c2"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/etweight1"
+                    android:layout_toEndOf="@+id/etdateday1"
+                    android:text="Kg"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="18sp" />
+                <Button
+                    android:id="@+id/butt_editinfo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="628dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="Save"
+                    android:textColor="@color/cardview_dark_background" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

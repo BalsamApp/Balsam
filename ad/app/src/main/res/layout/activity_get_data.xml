@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/idresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:outlineProvider="background"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button9"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignStart="@+id/editTextAllergy"
+        android:layout_marginStart="14dp"
+        android:onClick="getJSON"
+
+        android:text="get" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextAllergy"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:onClick="onUpdate"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/idresult"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/draw"
+        android:gravity="center"
+        android:outlineProvider="background"
+        android:text=""
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/idresult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Diseases:"
+        android:gravity="center"
+        android:background="@drawable/draw"
+        android:textStyle="italic"
+        android:textSize="17dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_centerVertical="true"
+        android:text="Allergy:"
+        android:gravity="center"
+        android:background="@drawable/draw"
+        android:textStyle="italic"
+        android:textSize="17dp"/>
+
+    <EditText
+        android:id="@+id/editTextAllergy"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" " />
+
+
+</RelativeLayout>

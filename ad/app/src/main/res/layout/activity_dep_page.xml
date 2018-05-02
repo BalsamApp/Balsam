@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ad.ad.dep_page">
+
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/alarm_dep"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:background="@color/c1"
+        android:fontFamily="@font/behind"
+        android:gravity="center_vertical|center|clip_vertical"
+        android:text="Alarms"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/med_dep"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/info_dep"
+        android:layout_alignStart="@+id/alarm_dep"
+        android:layout_marginBottom="32dp"
+        android:background="@color/c2"
+        android:fontFamily="@font/behind"
+        android:text="Medicins"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/info_dep"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+
+        android:layout_above="@+id/boom"
+        android:layout_alignStart="@+id/med_dep"
+        android:background="@color/c3"
+        android:fontFamily="@font/behind"
+        android:text="Information"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp" />
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:foregroundGravity="bottom"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_5_1"
+        app:bmb_normalColor="#fcda1a"
+        app:bmb_piecePlaceEnum="piecePlace_dot_5_1" />
+
+
+</RelativeLayout>

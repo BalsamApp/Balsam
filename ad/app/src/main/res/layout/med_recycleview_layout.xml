@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/prec_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/prec_cardView"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="5dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Prescription ID:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/presx_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="pre"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presx_id"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Doctor Name: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/doct_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignStart="@+id/presx_id"
+            android:text="doct"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/doct_id"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Date:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignStart="@+id/doct_id"
+            android:layout_marginTop="5dp"
+            android:text="da"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="5dp"
+            android:text="Duration:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/duration_pre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/date_pre"
+            android:layout_below="@+id/date_pre"
+            android:layout_marginTop="5dp"
+            android:text="dur"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
